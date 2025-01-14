@@ -1,137 +1,153 @@
-/* General Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/* General Styles */
 body {
   font-family: 'Open Sans', sans-serif;
   line-height: 1.6;
-  color: #333;
+  margin: 0;
+  padding: 0;
 }
 
-/* Header */
-header {
-  background: #1e1e1e;
-  color: #fff;
-  padding: 20px 0;
+h1, h2, h3 {
+  font-family: 'Roboto Slab', serif;
 }
 
-header nav {
-  max-width: 1100px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-header ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-
-header ul li a {
-  color: #fff;
+a {
   text-decoration: none;
-  font-weight: 600;
-  transition: color 0.3s;
+  color: inherit;
 }
 
-header ul li a:hover {
-  color: #f39c12;
+/* Header Styles */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 15px 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  font-weight: 600;
 }
 
 /* Hero Section */
 #hero {
-  background: linear-gradient(to bottom, #1e1e1e, #333);
-  color: #fff;
+  background-color: #f4f4f4;
+  padding: 100px 20px;
   text-align: center;
-  padding: 80px 20px;
 }
 
-#hero h2 {
-  font-family: 'Roboto Slab', serif;
+.hero-content h2 {
   font-size: 2.5rem;
   margin-bottom: 10px;
 }
 
-#hero p {
+.hero-content p {
+  font-size: 1.2rem;
   margin-bottom: 20px;
 }
 
 .cta {
   display: inline-block;
-  padding: 10px 20px;
-  background: #f39c12;
+  background-color: #333;
   color: #fff;
-  text-decoration: none;
-  font-weight: bold;
+  padding: 10px 20px;
   border-radius: 5px;
-  transition: background 0.3s;
 }
 
-.cta:hover {
-  background: #d35400;
+/* About Section */
+#about {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 40px;
 }
 
-/* Section Styles */
-section {
-  padding: 50px 20px;
-  max-width: 1100px;
-  margin: 0 auto;
+#about .about-content {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
 }
 
-h2 {
-  font-family: 'Roboto Slab', serif;
-  font-size: 2rem;
-  margin-bottom: 20px;
-  text-align: center;
+#about .profile-photo img {
+  width: 150px; /* Adjust the size as needed */
+  height: 150px;
+  border-radius: 50%; /* Makes the image circular */
+  object-fit: cover; /* Ensures the image fills the circle without distortion */
+  border: 3px solid #ddd; /* Adds a subtle border around the image */
 }
 
 /* Work Section */
+#work {
+  background-color: #f4f4f4;
+  padding: 50px 20px;
+  text-align: center;
+}
+
 .work-container {
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
   justify-content: center;
+  gap: 30px;
 }
 
 .work-card {
-  background: #f9f9f9;
+  background-color: #fff;
   padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  flex: 1 1 calc(45% - 20px);
-  text-align: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.work-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  width: 250px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .work-card h3 {
   margin-bottom: 10px;
-  color: #333;
 }
 
 .work-card a {
-  color: #f39c12;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.work-card a:hover {
+  color: #333;
+  font-weight: 600;
   text-decoration: underline;
 }
 
-/* Add styles for Socials Section */
-#socials {
+/* Contact Section */
+#contact {
   padding: 50px 20px;
+  background-color: #fff;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+button {
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Social Section */
+#socials {
+  background-color: #f4f4f4;
+  padding: 40px 20px;
   text-align: center;
 }
 
@@ -139,58 +155,39 @@ h2 {
   display: flex;
   justify-content: center;
   gap: 20px;
-  flex-wrap: wrap;
-  margin-top: 20px;
 }
 
 .social-link {
-  display: inline-block;
-  padding: 10px 20px;
-  color: #fff;
-  background: #1e1e1e;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background 0.3s, transform 0.3s;
-  font-weight: bold;
+  font-weight: 600;
 }
 
-.social-link:hover {
-  background: #f39c12;
-  transform: translateY(-3px);
-}
-
-
-/* Form */
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-input, textarea, button {
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  font-size: 1rem;
-}
-
-button {
-  background: #f39c12;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-button:hover {
-  background: #d35400;
-}
-
-/* Footer */
+/* Footer Styles */
 footer {
-  text-align: center;
-  padding: 20px 0;
-  background: #1e1e1e;
+  background-color: #333;
   color: #fff;
-  font-size: 0.9rem;
+  padding: 15px 0;
+  text-align: center;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  #about {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #about .profile-photo img {
+    width: 120px; /* Smaller size on mobile */
+    height: 120px;
+  }
+
+  .work-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .work-card {
+    width: 80%;
+    margin-bottom: 20px;
+  }
 }
