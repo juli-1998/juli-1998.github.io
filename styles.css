@@ -82,18 +82,35 @@ a {
   flex-wrap: wrap;
 }
 
+/* Bio Section */
 .bio {
-  flex: 1.5;
+  flex: 1;
   text-align: left;
 }
 
+.profile-photo {
+  display: flex;
+  justify-content: center; /* Centers the image horizontally */
+  align-items: center;     /* Centers the image vertically */
+  margin-bottom: 20px;      /* Adds some space below the photo */
+}
+
 .profile-photo img {
-  border-radius: 60%;
-  width: 600px;
-  height: 600px;
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
   object-fit: cover;
   border: 5px solid #ddd;
 }
+
+.bio p {
+  font-size: 1.5rem;  /* Increase font size for the bio text */
+  line-height: 1.8;
+  color: #555;       /* Optional: Change text color for better readability */
+  margin-top: 20px;
+  text-align: left;   /* Keeps text aligned to the left */
+}
+
 
 .timeline-container {
   flex: 1;
