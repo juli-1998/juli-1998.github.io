@@ -116,7 +116,7 @@ a {
 /* Timeline Section */
 .timeline-container {
   flex: 1;
-  background-color: #f8f8f8;
+  background-color: #f4f4f4; /* Changed background color to match general theme */
   padding: 20px;
   border-radius: 10px;
 }
@@ -140,6 +140,8 @@ a {
 .timeline-content {
   padding: 20px;
   border-left: 4px solid #41c3d6; /* Changed border color */
+  background-color: #ebd923; /* Set background color for timeline item */
+  border-radius: 5px;
 }
 
 .timeline-content h3 {
@@ -150,17 +152,18 @@ a {
 
 .timeline-content .timeline-date {
   font-size: 1rem;
-  color: #777;
+  color: #3f5260; /* Changed date text color */
   margin-bottom: 10px;
 }
 
 .timeline-link {
-  color: #ebd923; /* Changed link color */
+  color: #41c3d6; /* Changed link color */
   font-weight: bold;
   text-decoration: none;
 }
 
 .timeline-link:hover {
+  color: #3f5260; /* Hover effect to change link color */
   text-decoration: underline;
 }
 
@@ -242,4 +245,74 @@ button {
   background-color: #41c3d6; /* Changed button color */
   color: white;
   font-size: 1rem;
- 
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #3f5260; /* Hover color for button */
+}
+
+/* Social Section */
+#socials {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #f8f8f8;
+}
+
+#socials h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #3f5260; /* Changed section title color */
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-link {
+  font-size: 1.2rem;
+  color: #3f5260; /* Changed social link color */
+  font-weight: bold;
+}
+
+.social-link:hover {
+  color: #ebd923; /* Hover color for social links */
+}
+
+/* Footer */
+footer {
+  background-color: #3f5260; /* Changed footer background color */
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .timeline-container {
+    margin-top: 30px;
+  }
+
+  .work-container {
+    flex-direction: column;
+  }
+
+  .work-card {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+}
