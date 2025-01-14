@@ -3,8 +3,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
-  color: #3f5260; /* Changed text color */
+  color: #3f5260; /* Text color */
 }
 
 h1, h2, h3 {
@@ -20,7 +19,6 @@ a {
 #hero {
   position: relative;
   height: 100vh;
-  background: url('images/cover-photo.jpg') no-repeat center center/cover;
   color: white;
   display: flex;
   justify-content: center;
@@ -116,7 +114,6 @@ a {
 /* Timeline Section */
 .timeline-container {
   flex: 1;
-  background-color: #f4f4f4; /* Changed background color to match general theme */
   padding: 20px;
   border-radius: 10px;
 }
@@ -140,8 +137,6 @@ a {
 .timeline-content {
   padding: 20px;
   border-left: 4px solid #41c3d6; /* Changed border color */
-  background-color: #ebd923; /* Set background color for timeline item */
-  border-radius: 5px;
 }
 
 .timeline-content h3 {
@@ -223,7 +218,6 @@ a {
 /* Contact Section */
 #contact {
   padding: 80px 20px;
-  background-color: white;
 }
 
 form {
@@ -259,7 +253,6 @@ button:hover {
 #socials {
   padding: 40px 20px;
   text-align: center;
-  background-color: #f8f8f8;
 }
 
 #socials h2 {
