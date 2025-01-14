@@ -1,9 +1,10 @@
 /* General Styles */
 body {
   font-family: 'Open Sans', sans-serif;
-  line-height: 1.6;
   margin: 0;
   padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
 }
 
 h1, h2, h3 {
@@ -15,140 +16,181 @@ a {
   color: inherit;
 }
 
-/* Header Styles */
-header {
-  background-color: #333;
-  color: #fff;
-  padding: 15px 0;
-  text-align: center;
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
-}
-
-nav ul li {
-  display: inline;
-  margin: 0 15px;
-}
-
-nav ul li a {
-  color: #fff;
-  font-weight: 600;
-}
-
 /* Hero Section */
 #hero {
-  background-color: #f4f4f4;
-  padding: 100px 20px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/hero-bg.jpg') no-repeat center center/cover;
+  color: white;
   text-align: center;
+  padding: 150px 20px;
 }
 
-.hero-content h2 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-}
-
-.hero-content p {
-  font-size: 1.2rem;
+#hero h1 {
+  font-size: 3.5rem;
   margin-bottom: 20px;
 }
 
+#hero p {
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+}
+
 .cta {
-  display: inline-block;
-  background-color: #333;
-  color: #fff;
-  padding: 10px 20px;
+  padding: 15px 30px;
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
   border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.cta:hover {
+  background-color: #0056b3;
 }
 
 /* About Section */
 #about {
+  padding: 80px 20px;
+  text-align: center;
+  background-color: white;
+}
+
+#about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.about-content {
   display: flex;
+  justify-content: center;
   align-items: center;
   gap: 30px;
-  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-#about .about-content {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-}
-
-#about .profile-photo img {
-  width: 500px; /* Adjust the size as needed */
-  height: 500px;
-  border-radius: 70%; /* Makes the image circular */
-  object-fit: cover; /* Ensures the image fills the circle without distortion */
-  border: 3px solid #ddd; /* Adds a subtle border around the image */
+.profile-photo img {
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border: 5px solid #ddd;
 }
 
 /* Work Section */
 #work {
-  background-color: #f4f4f4;
-  padding: 50px 20px;
+  padding: 80px 20px;
   text-align: center;
+  background-color: #f8f8f8;
+}
+
+#work h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
 }
 
 .work-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
 }
 
 .work-card {
-  background-color: #fff;
+  background-color: white;
+  border-radius: 10px;
+  width: 300px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.work-card:hover {
+  transform: translateY(-10px);
+}
+
+.work-thumbnail {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.work-info {
   padding: 20px;
-  border-radius: 8px;
-  width: 250px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
 }
 
-.work-card h3 {
-  margin-bottom: 10px;
+.work-info h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
 }
 
-.work-card a {
-  color: #333;
-  font-weight: 600;
-  text-decoration: underline;
+.work-info p {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.work-info a {
+  font-weight: bold;
+  color: #007bff;
+  transition: color 0.3s ease;
+}
+
+.work-info a:hover {
+  color: #0056b3;
 }
 
 /* Contact Section */
 #contact {
-  padding: 50px 20px;
-  background-color: #fff;
+  padding: 80px 20px;
+  background-color: white;
+}
+
+#contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
 }
 
 form {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 20px;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 input, textarea {
-  padding: 10px;
-  border: 1px solid #ccc;
+  padding: 15px;
+  border: 1px solid #ddd;
   border-radius: 5px;
-  width: 100%;
+  font-size: 1rem;
 }
 
 button {
-  padding: 10px;
-  background-color: #333;
-  color: #fff;
+  padding: 15px;
+  background-color: #007bff;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
   border: none;
   cursor: pointer;
-  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
 }
 
 /* Social Section */
 #socials {
-  background-color: #f4f4f4;
   padding: 40px 20px;
   text-align: center;
+  background-color: #f8f8f8;
+}
+
+#socials h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
 }
 
 .social-links {
@@ -158,32 +200,37 @@ button {
 }
 
 .social-link {
-  font-weight: 600;
+  font-size: 1.2rem;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
 
-/* Footer Styles */
+.social-link:hover {
+  color: #007bff;
+}
+
+/* Footer */
 footer {
   background-color: #333;
-  color: #fff;
-  padding: 15px 0;
+  color: white;
   text-align: center;
+  padding: 20px;
+  font-size: 1rem;
 }
 
-/* Responsive Styling */
+/* Responsive Design */
 @media (max-width: 768px) {
-  #about {
-    flex-direction: column;
-    align-items: center;
+  #hero h1 {
+    font-size: 2.5rem;
   }
 
-  #about .profile-photo img {
-    width: 120px; /* Smaller size on mobile */
-    height: 120px;
+  .about-content {
+    flex-direction: column;
   }
 
   .work-container {
     flex-direction: column;
-    align-items: center;
   }
 
   .work-card {
