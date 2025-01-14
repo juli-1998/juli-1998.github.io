@@ -78,9 +78,9 @@ nav ul li a {
 }
 
 #about .profile-photo img {
-  width: 500px; /* Adjust the size as needed */
-  height: 500px;
-  border-radius: 50%; /* Makes the image circular */
+  width: 800px; /* Adjust the size as needed */
+  height: 800px;
+  border-radius: 70%; /* Makes the image circular */
   object-fit: cover; /* Ensures the image fills the circle without distortion */
   border: 3px solid #ddd; /* Adds a subtle border around the image */
 }
