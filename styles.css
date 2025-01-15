@@ -19,7 +19,6 @@ a {
 #hero {
   position: relative;
   height: 50vh;
-  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
