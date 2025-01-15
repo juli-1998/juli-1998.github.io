@@ -126,7 +126,7 @@ a {
 .timeline-icon {
   width: 20px;
   height: 20px;
-  background-color: #41c3d6; /* Changed icon color */
+  background-color: #EBD923; /* Changed icon color */
   border-radius: 50%;
   position: absolute;
   left: -10px;
@@ -135,7 +135,7 @@ a {
 
 .timeline-content {
   padding: 20px;
-  border-left: 4px solid #EBD923; /* Changed border color */
+  border-left: 4px solid #00AFAA; /* Changed border color */
 }
 
 .timeline-content h3 {
