@@ -99,7 +99,7 @@ a {
   width: 400px;
   height: 400px;
   object-fit: cover;
-  border: 5px solid #EBD923; /* Changed photo border color */
+  border: 5px solid #00AFAA; /* Changed photo border color */
 }
 
 .bio p {
@@ -129,13 +129,13 @@ a {
   background-color: #EBD923; /* Changed icon color */
   border-radius: 50%;
   position: absolute;
-  left: -10px;
+  left: -11px;
   top: 15px;
 }
 
 .timeline-content {
   padding: 20px;
-  border-left: 4px solid #00AFAA; /* Changed border color */
+  border-left: 5px solid #00AFAA; /* Changed border color */
 }
 
 .timeline-content h3 {
@@ -151,7 +151,7 @@ a {
 }
 
 .timeline-link {
-  color: #41c3d6; /* Changed link color */
+  color: #00AFAA; /* Changed link color */
   font-weight: bold;
   text-decoration: none;
 }
