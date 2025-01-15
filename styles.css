@@ -128,8 +128,8 @@ a {
   height: 20px;
   background-color: #EBD923; /* Changed icon color */
   border-radius: 50%;
-  position: absolute;
-  left: -11px;
+  position: center;
+  left: -13px;
   top: 15px;
 }
 
