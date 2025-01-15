@@ -32,6 +32,7 @@ a {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
+  color: #06324C;
 }
 
 .hero-content {
@@ -44,7 +45,7 @@ a {
 .hero-content h1 {
   font-size: 4rem;
   margin-bottom: 20px;
-  color: #41c3d6; /* Changed title color */
+  color: #FBF3E8; /* Changed title color */
 }
 
 .hero-content p {
@@ -55,7 +56,7 @@ a {
 
 .cta {
   padding: 15px 30px;
-  background-color: #41c3d6; /* Changed CTA color */
+  background-color: #FBF3E8; /* Changed CTA color */
   color: white;
   font-weight: bold;
   border-radius: 5px;
@@ -63,7 +64,7 @@ a {
 }
 
 .cta:hover {
-  background-color: #3f5260; /* Changed hover color */
+  background-color: #EBD923; /* Changed hover color */
 }
 
 /* About Section */
