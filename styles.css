@@ -49,7 +49,7 @@ a {
 .hero-content p {
   font-size: 1.5rem;
   margin-bottom: 40px;
-  color: #ebd923; /* Changed text color */
+  color: white; /* Changed text color */
 }
 
 .cta {
